@@ -1,0 +1,9 @@
+{
+  "id": 0,
+  "name": "the ghost hunter",
+  "description": "who ever comes near me shall face death",
+  "price": 50,
+  "imagecover": "toy1.jpg",
+  "images": ["toy1.jpg"],
+  "startDates": ["2023-04-25,9.42"]
+}

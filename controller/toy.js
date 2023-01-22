@@ -9,7 +9,7 @@ exports.getAllToys = async (req, res) => {
       status: "success",
       results: toys.length,
       data: {
-        tours,
+        toys,
       },
     });
   } catch (err) {

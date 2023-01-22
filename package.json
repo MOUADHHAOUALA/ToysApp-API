@@ -6,7 +6,8 @@
     "morgan": "^1.10.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "name": "toys-api",
   "description": "toys-api",
@@ -22,5 +23,8 @@
     "url": "https://github.com/MOUADHHAOUALA/ToysApp-API/issues"
   },
   "homepage": "https://github.com/MOUADHHAOUALA/ToysApp-API#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }

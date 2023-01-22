@@ -28,7 +28,7 @@ const toySchema = new mongoose.Schema({
     default: Date.now(),
   },
 
-  startDtaes: [Date],
+  startDates: [Date],
 });
 
 const Toy = mongoose.model("toy", toySchema);
