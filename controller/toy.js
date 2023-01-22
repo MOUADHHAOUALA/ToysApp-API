@@ -3,7 +3,13 @@ const Toy = require("./../models/toyModel");
 
 exports.getAllToys = async (req, res) => {
   try {
-    const toys = await Toy.find();
+    const queryObj = { ...req.query };
+    const excludedFields = ["page", "sort", "limit", "fields"];
+    excludedFields.forEach((el) => delete queryObj[el]);
+
+    const query = await Toy.find(queryObj);
+
+    const toys = await query;
 
     res.status(200).json({
       status: "success",
